@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PREPWISE-Interview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/extra.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- LOGO -->
+      <a href="/" class="nav-logo">
+        <div class="logo-mark">
+          <span>P</span>
+        </div>
+        <span class="logo-text">Prep<strong>Wise</strong></span>
+      </a>
+
+      <!-- NAV LINKS (desktop) -->
+      <nav class="nav-links" id="navLinks">
+
+        <div class="nav-item has-dropdown">
+          <button class="nav-link" aria-expanded="false">
+            Features
+            <svg class="nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="dropdown">
+            <a href="/features" class="dropdown-item">
+              <span class="di-icon">🎙</span>
+              <span>
+                <strong>Voice AI Interviewer</strong>
+                <small>Real-time conversational AI</small>
+              </span>
+            </a>
+            <a href="/features" class="dropdown-item">
+              <span class="di-icon">👁</span>
+              <span>
+                <strong>AI Vision Analysis</strong>
+                <small>Face & posture tracking</small>
+              </span>
+            </a>
+            <a href="/features" class="dropdown-item">
+              <span class="di-icon">📊</span>
+              <span>
+                <strong>Deep Feedback Reports</strong>
+                <small>8-dimension scoring</small>
+              </span>
+            </a>
+            <a href="/features" class="dropdown-item">
+              <span class="di-icon">📈</span>
+              <span>
+                <strong>Progress Tracking</strong>
+                <small>Improvement over time</small>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <button class="nav-link" aria-expanded="false">
+            Interview Types
+            <svg class="nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="dropdown">
+            <a href="/features" class="dropdown-item">
+              <span class="di-icon">💻</span>
+              <span>
+                <strong>Software Engineering</strong>
+                <small>DSA, System Design, Behavioral</small>
+              </span>
+            </a>
+            <a href="/features" class="dropdown-item">
+              <span class="di-icon">📦</span>
+              <span>
+                <strong>Product Management</strong>
+                <small>Case studies, Strategy</small>
+              </span>
+            </a>
+            <a href="/features" class="dropdown-item">
+              <span class="di-icon">📊</span>
+              <span>
+                <strong>Data Science / Analytics</strong>
+                <small>SQL, Stats, ML concepts</small>
+              </span>
+            </a>
+            <a href="/features" class="dropdown-item">
+              <span class="di-icon">🎨</span>
+              <span>
+                <strong>Design</strong>
+                <small>Portfolio, Process, Critique</small>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="/about" class="nav-link">About</a>
+        <a href="/contact" class="nav-link">Contact</a>
+        
+
+        
+
+      </nav>
+
+      <!-- CTA BUTTONS -->
+      <div class="nav-ctas">
+        <a href="/login" class="btn btn-ghost">Sign In</a>
+        <a href="/signup" class="btn btn-primary">
+          Start Free
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- MOBILE HAMBURGER -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    
+
+  </header>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+
+    <!-- Background image — replace YOUR_IMAGE.jpg with your file -->
+    <div class="hero-bg">
+      <img
+        src="/images/hero-banner.png"
+        alt=""
+        class="hero-bg-img"
+        aria-hidden="true"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Background decorative grid -->
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <!-- Radial glows -->
+    <div class="glow glow-1" aria-hidden="true"></div>
+    <div class="glow glow-2" aria-hidden="true"></div>
+
+    <div class="hero-container">
+
+      <!-- LEFT — COPY -->
+      <div class="hero-copy">
+
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          AI-Powered Interview Coach
+        </div>
+
+        <h1 class="hero-h1">
+          <span class="line line-1">Ace Every</span>
+          <span class="line line-2 italic-accent">Interview</span>
+          <span class="line line-3">Before It Happens</span>
+        </h1>
+
+        <p class="hero-sub">
+          Real-time AI mock interviews with live facial expression &amp;
+          posture analysis. Get specific, actionable feedback —
+          not generic tips.
+        </p>
+
+        <div class="hero-btns">
+          <a href="/signup" class="btn btn-primary btn-lg">
+            Start Free Interview
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M2 12L12 2M12 2H5M12 2v7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <button class="btn btn-play" id="demoBtn">
+            WHY PREP WISE?
+          </button>
+        </div>
+
+        
+
+      </div>
+
+      <!-- RIGHT — LIVE INTERVIEW MOCK WIDGET -->
+      <div class="hero-widget" aria-label="Live interview preview">
+
+        <div class="widget-card">
+
+          <!-- Window chrome -->
+          <div class="widget-chrome">
+            <div class="chrome-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="chrome-title">PrepWise Interview Room</span>
+            <span class="live-badge">
+              <span class="live-dot"></span>
+              LIVE
+            </span>
+          </div>
+
+          <!-- Main body: camera + sidebar -->
+          <div class="widget-body">
+
+            <!-- Camera feed -->
+            <div class="widget-cam">
+
+              <!-- Silhouette person -->
+              <div class="cam-person">
+                <div class="person-head"></div>
+                <div class="person-body"></div>
+              </div>
+
+              <!-- Face mesh overlay -->
+              <div class="face-mesh">
+                <span class="mesh-label">FACE MESH</span>
+                <!-- mesh dots -->
+                <div class="mesh-dot md-1"></div>
+                <div class="mesh-dot md-2"></div>
+                <div class="mesh-dot md-3"></div>
+                <div class="mesh-dot md-4"></div>
+                <div class="mesh-dot md-5"></div>
+                <div class="mesh-dot md-6"></div>
+              </div>
+
+              <!-- Skeleton tracking dots -->
+              <div class="sk-dot sk-1"></div>
+              <div class="sk-dot sk-2"></div>
+              <div class="sk-dot sk-3"></div>
+              <div class="sk-dot sk-4"></div>
+              <div class="sk-dot sk-5"></div>
+
+              <!-- Skeleton lines -->
+              <svg class="sk-lines" viewBox="0 0 220 260" xmlns="http://www.w3.org/2000/svg">
+                <line x1="110" y1="70" x2="74" y2="110" stroke="rgba(26,255,160,0.25)" stroke-width="1"/>
+                <line x1="110" y1="70" x2="146" y2="110" stroke="rgba(26,255,160,0.25)" stroke-width="1"/>
+                <line x1="74" y1="110" x2="60" y2="150" stroke="rgba(26,255,160,0.25)" stroke-width="1"/>
+                <line x1="146" y1="110" x2="160" y2="150" stroke="rgba(26,255,160,0.25)" stroke-width="1"/>
+              </svg>
+
+              <!-- Question bar at bottom -->
+              <div class="cam-bottom">
+                <div class="cam-question">
+                  "Tell me about a time you handled a challenging deadline…"
+                </div>
+                <div class="cam-timer" id="camTimer">1:24</div>
+              </div>
+
+            </div>
+
+            <!-- Analysis sidebar -->
+            <div class="widget-sidebar">
+              <p class="sidebar-title">Live Analysis</p>
+
+              <div class="metric">
+                <div class="metric-top">
+                  <span class="metric-name">Confidence</span>
+                  <span class="metric-val">82%</span>
+                </div>
+                <div class="metric-bar">
+                  <div class="metric-fill fill-green" style="width:82%"></div>
+                </div>
+              </div>
+
+              <div class="metric">
+                <div class="metric-top">
+                  <span class="metric-name">Eye Contact</span>
+                  <span class="metric-val">64%</span>
+                </div>
+                <div class="metric-bar">
+                  <div class="metric-fill fill-yellow" style="width:64%"></div>
+                </div>
+              </div>
+
+              <div class="metric">
+                <div class="metric-top">
+                  <span class="metric-name">Posture</span>
+                  <span class="metric-val">✓ Good</span>
+                </div>
+                <div class="metric-bar">
+                  <div class="metric-fill fill-blue" style="width:78%"></div>
+                </div>
+              </div>
+
+              <div class="metric">
+                <div class="metric-top">
+                  <span class="metric-name">Nervousness</span>
+                  <span class="metric-val">Low</span>
+                </div>
+                <div class="metric-bar">
+                  <div class="metric-fill fill-red" style="width:28%"></div>
+                </div>
+              </div>
+
+              <div class="sidebar-alerts">
+                <div class="alert-item alert-warn">
+                  <span>⚠</span> Look at camera more
+                </div>
+                <div class="alert-item alert-ok">
+                  <span>✓</span> Great smile at intro!
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Controls row -->
+          <div class="widget-controls">
+            <button class="ctrl-btn" aria-label="Mute">🎙</button>
+            <button class="ctrl-btn" aria-label="Camera">📷</button>
+            <button class="ctrl-btn ctrl-end" aria-label="End call">📵</button>
+            <button class="ctrl-btn" aria-label="Chat">💬</button>
+            <button class="ctrl-btn" aria-label="Settings">⚙️</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span class="scroll-text">scroll</span>
+    </div>
+
+  </section>
+
+  <!-- ═════════════════════════════
+       04  FEATURES GRID
+  ═════════════════════════════ -->
+  <section class="features" id="features" aria-labelledby="features-heading">
+    <div class="features-container">
+
+      <!-- ── SECTION INTRO ROW ── -->
+      <div class="features-intro">
+
+        <!-- Left: kicker + heading -->
+        <div class="intro-left">
+          <div class="section-kicker" aria-hidden="true">
+            <span class="kicker-line"></span>
+            What You Get
+          </div>
+          <h2 class="section-heading" id="features-heading">
+            Everything your interview
+            <em class="heading-italic">needs to succeed</em>
+          </h2>
+        </div>
+
+        <!-- Right: supporting body copy -->
+        <div class="intro-right">
+          <p class="intro-body">
+            PrepWise is more than a question bank. It's a full simulation —
+            voice, video, AI feedback — designed to surface exactly what's
+            holding you back and fix it before the real thing.
+          </p>
+          <a href="#how-it-works" class="intro-link">
+            See how it works
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 12L12 2M12 2H5M12 2v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- ── FEATURES GRID — 3 × 2 ── -->
+      <div class="features-grid">
+
+        <!-- Card 01 — Voice AI -->
+        <article class="feature-card" data-index="0" aria-label="Voice AI Interviewer">
+          <div class="card-icon" aria-hidden="true">
+            <img src="/images/mic.png" alt="resume-icon" class="features-icon">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Voice AI Interviewer</h3>
+            <p class="card-desc">
+              Conversational AI that asks follow-ups, adjusts difficulty,
+              and sounds like a real interviewer — not a chatbot.
+            </p>
+          </div>
+          <a href="/features#voice" class="card-link" tabindex="0">
+            Learn more
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M1 11L11 1M11 1H5M11 1v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <div class="card-hover-line" aria-hidden="true"></div>
+        </article>
+
+        <!-- Card 02 — AI Vision (SIGNATURE — dark inverted) -->
+        <article class="feature-card card-signature" data-index="1" aria-label="AI Vision Analysis — Signature Feature">
+          <div class="signature-badge" aria-label="Signature feature">
+            <span aria-hidden="true">⭐</span> Signature
+          </div>
+          <div class="card-icon" aria-hidden="true">
+            <img src="/images/eye.png" alt="resume-icon" class="features-icon">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">AI Vision Analysis</h3>
+            <p class="card-desc">
+              Real-time facial expression + posture tracking. Scored on
+              what you say AND how you say it — simultaneously.
+            </p>
+          </div>
+          <a href="/features#vision" class="card-link" tabindex="0">
+            Learn more
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M1 11L11 1M11 1H5M11 1v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+
+          <!-- Decorative grid lines inside signature card -->
+          <div class="sig-grid" aria-hidden="true"></div>
+
+          <!-- Animated corner bracket -->
+          <div class="sig-corner sig-corner-tl" aria-hidden="true"></div>
+          <div class="sig-corner sig-corner-br" aria-hidden="true"></div>
+        </article>
+
+        <!-- Card 03 — Feedback Reports -->
+        <article class="feature-card" data-index="2" aria-label="Deep Feedback Reports">
+          <div class="card-icon" aria-hidden="true">
+            <img src="/images/bar-chart.png" alt="resume-icon" class="features-icon">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Deep Feedback Reports</h3>
+            <p class="card-desc">
+              Scored across 8 dimensions. Specific suggestions. Rewritten
+              answer examples. Real coaching — not vague tips.
+            </p>
+          </div>
+          <a href="/features#feedback" class="card-link" tabindex="0">
+            Learn more
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M1 11L11 1M11 1H5M11 1v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <div class="card-hover-line" aria-hidden="true"></div>
+        </article>
+
+        <!-- Card 04 — Role-Based Questions -->
+        <article class="feature-card" data-index="3" aria-label="Role-Based Questions">
+          <div class="card-icon" aria-hidden="true">
+          <img src="/images/target.png" alt="resume-icon" class="features-icon">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Role-Based Questions</h3>
+            <p class="card-desc">
+              SWE, PM, Data, Design, Marketing. Questions tailored to your
+              experience level and target company tier.
+            </p>
+          </div>
+          <a href="/features#roles" class="card-link" tabindex="0">
+            Learn more
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M1 11L11 1M11 1H5M11 1v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <div class="card-hover-line" aria-hidden="true"></div>
+        </article>
+
+        <!-- Card 05 — Progress Tracking -->
+        <article class="feature-card" data-index="4" aria-label="Progress Tracking">
+          <div class="card-icon" aria-hidden="true">
+           <img src="/images/planning.png" alt="resume-icon" class="features-icon"> 
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Progress Tracking</h3>
+            <p class="card-desc">
+              Visual score improvement across sessions. Streak tracking.
+              Auto-identifies weak areas and makes them your focus.
+            </p>
+          </div>
+          <a href="/features#progress" class="card-link" tabindex="0">
+            Learn more
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M1 11L11 1M11 1H5M11 1v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <div class="card-hover-line" aria-hidden="true"></div>
+        </article>
+
+        <!-- Card 06 — Resume-Based Mode -->
+        <article class="feature-card" data-index="5" aria-label="Resume-Based Mode">
+          <div class="card-icon" aria-hidden="true">
+            <img src="/images/resume.png" alt="resume-icon" class="features-icon">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Resume-Based Mode</h3>
+            <p class="card-desc">
+              Upload your resume. AI generates questions from your actual
+              experience, projects, and specific skills listed.
+            </p>
+          </div>
+          <a href="/features#resume" class="card-link" tabindex="0">
+            Learn more
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M1 11L11 1M11 1H5M11 1v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <div class="card-hover-line" aria-hidden="true"></div>
+        </article>
+
+      </div>
+      <!-- /features-grid -->
+
+    </div>
+    <!-- /features-container -->
+  </section>
+
+  <!-- how it works section -->
+   <section class="how" id="how-it-works">
+    <div class="how-container">
+
+      <!-- ── SECTION HEADER ── -->
+      <div class="how-header">
+        <p class="how-kicker">Simple Process</p>
+        <h2 class="how-heading">
+          From sign-up to
+          <em class="how-heading-italic">offer letter</em>
+        </h2>
+      </div>
+
+      <!-- ── STEPS TRACK ── -->
+      <div class="how-track">
+
+        <!-- Connector line (drawn left-to-right on scroll) -->
+        <div class="track-line" aria-hidden="true">
+          <div class="track-line-fill"></div>
+        </div>
+
+        <!-- ── STEP 01 ── -->
+        <article class="how-step" data-i="0">
+          <div class="step-number-wrap">
+            <div class="step-number">
+              <span>01</span>
+            </div>
+            <!-- Outer pulse ring — only on active -->
+            <div class="step-ring" aria-hidden="true"></div>
+          </div>
+          <div class="step-body">
+            <h3 class="step-title">Create Account</h3>
+            <p class="step-desc">
+              Pick your target role, experience level, and which companies
+              you're aiming for. 2 minutes to set up.
+            </p>
+          </div>
+        </article>
+
+        <!-- ── STEP 02 — ACTIVE ── -->
+        <article class="how-step" data-i="1">
+          <div class="step-number-wrap">
+            <div class="step-number">
+              <span>02</span>
+            </div>
+            <div class="step-ring" aria-hidden="true"></div>
+          </div>
+          <div class="step-body">
+            <h3 class="step-title">Start Interview</h3>
+            <p class="step-desc">
+              Choose voice or text mode. Camera-on for full AI vision,
+              or camera-off for audio-only practice.
+            </p>
+          </div>
+        </article>
+
+        <!-- ── STEP 03 ── -->
+        <article class="how-step" data-i="2">
+          <div class="step-number-wrap">
+            <div class="step-number">
+              <span>03</span>
+            </div>
+            <div class="step-ring" aria-hidden="true"></div>
+          </div>
+          <div class="step-body">
+            <h3 class="step-title">Get Feedback</h3>
+            <p class="step-desc">
+              Instant report on verbal + non-verbal performance with
+              timestamped, specific coaching notes.
+            </p>
+          </div>
+        </article>
+
+        <!-- ── STEP 04 ── -->
+        <article class="how-step" data-i="3">
+          <div class="step-number-wrap">
+            <div class="step-number">
+              <span>04</span>
+            </div>
+            <div class="step-ring" aria-hidden="true"></div>
+          </div>
+          <div class="step-body">
+            <h3 class="step-title">Track &amp; Improve</h3>
+            <p class="step-desc">
+              Score improves over sessions. PrepWise tracks your weak
+              spots and keeps them in focus every time.
+            </p>
+          </div>
+        </article>
+
+      </div>
+      <!-- /how-track -->
+
+      <!-- ── BOTTOM CTA ── -->
+      <div class="how-cta">
+        <a href="/signup" class="how-cta-btn">
+          Start Practicing Free
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 12L12 2M12 2H5M12 2v7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <p class="how-cta-note">No credit card required &nbsp;·&nbsp; Free plan available</p>
+      </div>
+
+    </div>
+    <!-- /how-container -->
+  </section>
+
+
+  <!-- ai spotlight section -->
+   <section class="spotlight" id="ai-vision">
+    <div class="spotlight-container">
+
+      <div class="spotlight-grid">
+
+        <!-- Background decorative grid -->
+    <div class="hero-grid" aria-hidden="true"></div>
+
+        
+
+            <!-- left side image -->
+             <img src="images\Adobe Express - file (2).png" alt="interview-illustration" class="spotlight-image">
+
+
+
+        <!-- ════════════════════════════
+             RIGHT — Copy + Feature Points
+        ════════════════════════════ -->
+        <div class="copy-wrap">
+
+          <!-- Kicker -->
+          <p class="section-kicker">
+            <span class="kicker-line"></span>
+            AI Vision Layer
+          </p>
+
+          <!-- Heading -->
+          <h2 class="section-heading">
+            Your face tells a
+            <em class="heading-italic">different story</em>
+          </h2>
+
+          <!-- Body -->
+          <p class="section-body">
+            Most tools score your words. PrepWise scores how you say them.
+            Body language accounts for 55%+ of first impressions —
+            we track every frame of it.
+          </p>
+
+          <!-- Feature points -->
+          <div class="feature-points">
+
+            <div class="fp">
+              <img src="/images/happiness.png" class="fp-icon" alt="fp-icons">
+              <div class="fp-body">
+                <h3 class="fp-title">Facial Expression Recognition</h3>
+                <p class="fp-desc">
+                  7 emotion states tracked frame-by-frame. See when you
+                  looked nervous and exactly what question triggered it.
+                </p>
+              </div>
+            </div>
+
+            <div class="fp">
+             <img src="/images/pipe.png" class="fp-icon" alt="fp-icons">
+              <div class="fp-body">
+                <h3 class="fp-title">Posture &amp; Body Language</h3>
+                <p class="fp-desc">
+                  33 body landmarks via MediaPipe Holistic. Shoulder slouch,
+                  eye contact %, head tilt — all tracked live at 30fps.
+                </p>
+              </div>
+            </div>
+
+            <div class="fp">
+              <img src="/images/padlock.png" class="fp-icon" alt="fp-icons">
+              <div class="fp-body">
+                <h3 class="fp-title">100% Private — Runs In Browser</h3>
+                <p class="fp-desc">
+                  All vision processing is client-side via WebAssembly.
+                  Your raw video never leaves your device. Zero upload.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <!-- /feature-points -->
+
+          <!-- CTA -->
+          <a href="/signup" class="spotlight-cta">
+            Try AI Vision Free
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+              <path d="M1.5 11.5L11.5 1.5M11.5 1.5H5M11.5 1.5V8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+        </div>
+        <!-- /copy-wrap -->
+
+      </div>
+      <!-- /spotlight-grid -->
+
+    </div>
+    <!-- /spotlight-container -->
+  </section>
+
+
+  <!-- FAQ SECTION -->
+   <section class="faq-section" id="faq">
+    <div class="faq-container">
+      <div class="faq-grid">
+
+        <!-- LEFT -->
+        <div class="faq-left">
+
+          <p class="faq-kicker">
+            <span class="kicker-line"></span>
+            FAQ
+          </p>
+
+          <h2 class="faq-heading">
+            Questions
+            <em>answered.</em>
+          </h2>
+
+          <p class="faq-sub">
+            Can't find what you need?<br>
+            Our team replies within an hour.
+          </p>
+
+          <a href="/contact" class="faq-cta">Contact Support →</a>
+
+        </div>
+
+        <!-- RIGHT — ACCORDION -->
+        <div class="faq-right">
+          <div class="faq-list">
+
+            <div class="faq-item is-open">
+              <button class="faq-q">
+                <span class="faq-q-text">Does AI Vision work with a normal laptop camera?</span>
+                <span class="faq-toggle">−</span>
+              </button>
+              <div class="faq-a">
+                <p>Yes — MediaPipe runs on any standard webcam. You don't need HD hardware. The AI auto-adjusts for lighting and video quality.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                <span class="faq-q-text">Is my video data stored or shared?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-a">
+                <p>No. All vision processing is client-side in your browser. Raw video frames are never uploaded. Only aggregated scores are saved to your account.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                <span class="faq-q-text">What interview types are supported?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Behavioral (STAR), technical verbal, case study, product design, situational, and custom. 12 job tracks and growing.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                <span class="faq-q-text">Can I use my own job description?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Yes — Pro and Teams users can paste a JD and PrepWise auto-generates a tailored question set from it.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                <span class="faq-q-text">How accurate is posture and expression detection?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Posture detection has ~95% accuracy under normal lighting. Expression classification shows directional trends — useful for coaching, not clinical diagnosis.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+   <section class="cta-section" id="cta">
+
+    <!-- Dot grid overlay -->
+    <div class="cta-grid-overlay" aria-hidden="true"></div>
+
+    <!-- Red radial glow -->
+    <div class="cta-glow" aria-hidden="true"></div>
+
+    <div class="cta-container">
+      <div class="cta-inner">
+
+        <!-- Eyebrow -->
+        <p class="cta-eyebrow">You're one practice session away</p>
+
+        <!-- Heading -->
+        <h2 class="cta-heading">
+          Stop winging it.
+          <em>Start winning it.</em>
+        </h2>
+
+        <!-- Subtext -->
+        <p class="cta-sub">
+          Join students who practice smarter with PrepWise.
+        </p>
+
+        <!-- Buttons -->
+        <div class="cta-buttons">
+          <a href="/signup" class="cta-btn cta-btn--primary">
+            Start Free Interview
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+              <path d="M1.5 11.5L11.5 1.5M11.5 1.5H5M11.5 1.5V8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="/about#pricing" class="cta-btn cta-btn--ghost">
+            View Pricing
+          </a>
+        </div>
+
+        <!-- Fine print -->
+        <p class="cta-note">
+          No credit card required &nbsp;·&nbsp; Free plan available &nbsp;·&nbsp; Cancel anytime
+        </p>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+   <footer class="footer-section" id="footer">
+
+    <!-- ── MAIN FOOTER GRID ── -->
+    <div class="footer-container">
+      <div class="footer-grid">
+
+        <!-- COL 1 — Brand -->
+        <div class="footer-brand">
+
+          <div class="footer-logo">
+            <div class="footer-mark">P</div>
+            <span class="footer-logo-name">Prep<strong>Wise</strong></span>
+          </div>
+
+          <p class="footer-tagline">
+            AI-powered interview practice that actually prepares you — not just calms you down.
+          </p>
+
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="X / Twitter">𝕏</a>
+            <a href="#" class="footer-social" aria-label="LinkedIn">in</a>
+            <a href="#" class="footer-social" aria-label="YouTube">▶</a>
+            <a href="#" class="footer-social" aria-label="GitHub">gh</a>
+          </div>
+
+        </div>
+
+        <!-- COL 2 — Product -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">Product</h3>
+          <ul class="footer-links">
+            <li><a href="/features">Features</a></li>
+            
+            <li><a href="/features#roles">Interview Types</a></li>
+            <li><a href="/about#teams">For Teams</a></li>
+            
+          </ul>
+        </div>
+
+        <!-- COL 3 — Company -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="/about">About</a></li>
+            
+            <li><a href="/about#team">Careers</a></li>
+           
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 4 — Resources -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">Resources</h3>
+          <ul class="footer-links">
+            <li><a href="/features#tips">Interview Tips</a></li>
+            <li><a href="/features#resume">Resume Guide</a></li>
+           
+            
+            <li><a href="/contact">Help Center</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── BOTTOM BAR ── -->
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copy">© 2025 PrepWise Inc. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="/about#privacy">Privacy Policy</a>
+            <a href="/about#terms">Terms of Service</a>
+            <a href="/about#cookies">Cookie Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+   
+
+
+  
+
+
+  
+</body>
+</html>
+<script>
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+});
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+  });
+}
+// Dropdowns
+document.querySelectorAll('.has-dropdown').forEach(item => {
+  const btn = item.querySelector('.nav-link');
+  btn && btn.addEventListener('click', () => {
+    item.classList.toggle('dropdown-open');
+    btn.setAttribute('aria-expanded', item.classList.contains('dropdown-open'));
+  });
+});
+// FAQ accordion
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.querySelector('.faq-q').addEventListener('click', () => {
+    const wasOpen = item.classList.contains('is-open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('is-open');
+      i.querySelector('.faq-toggle').textContent = '+';
+    });
+    if (!wasOpen) {
+      item.classList.add('is-open');
+      item.querySelector('.faq-toggle').textContent = '−';
+    }
+  });
+});
+// Update nav buttons if logged in
+const token = localStorage.getItem('pw_token');
+const user  = JSON.parse(localStorage.getItem('pw_user') || 'null');
+if (token && user) {
+  document.querySelectorAll('a[href="/login"], a[href="/signup"]').forEach(a => {
+    if (a.href.includes('signup')) { a.href = '/dashboard'; a.textContent = 'Dashboard'; }
+    if (a.href.includes('login'))  { a.href = '/dashboard'; a.textContent = `Hi, ${(user.name||'').split(' ')[0] || 'You'}`; }
+  });
+}
+</script>
